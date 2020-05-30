@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //JSON (JavaScript Object Notation(JSON)) : 자바스크립트 객체를 쉽게 사용하기 위한 것
+        // var ar = ["title":"hello","value1":10,..] //배열 안에서 키와 밸류 형태로 저장할 수 있어서 편함
+        // console.log(ar[0]); //이렇게 불러올 수 있다.
+
+
+        // ctrl + k, c ->주석처리
+        // var n = true;
+        // var exam = new Object();
+        // exam.kor = 30;
+        // exam.eng = 70;
+        // exam.math = 80;
+
+        //exam 객체가 키,밸류로 초기화된 상태로 만들어짐
+        var exam = {"kor":30, "eng":70, "math":80};
+        var ar = [3,4,5,6,exam,[7,8,9]]; // 배열
+        
+        console.log(exam.kor + exam.eng);
+        console.log(ar[5][1]); // 8
+        console.log(ar[4].math); // 80
+
+        var notice = {"id":1, "title":"hello"}; //json 방식
+        console.log(notice.title); //notice는 객체이기에 정상적인 방식
+
+        var notice ='{"id":1, "title":"hello"}'; //문자열임
+        console.log(notice.title); //notice가 문자열이기 때문에 불가
+
+    </script>
+    
+</body>
+</html>
